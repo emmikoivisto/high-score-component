@@ -26,8 +26,11 @@ class HighScoresTest(unittest.TestCase):
         top_three = [12, 22, 45, 55, 55]
         self.assertEqual([55, 55, 45], personal_top_three(top_three))
 
-    # Test top three when there is a tie
+    def test_top_three_when_less_than_three(self):
+       new_scores = [43, 81]
+       self.assertEqual([81, 43], personal_top_three(new_scores))
 
-    # Test top three when there are less than three
-
-    # Test top three when there is only one
+    def test_top_3_when_only_one(self):
+        score = [20]
+        self.assertEqual([20], personal_top_three(score))
+    
