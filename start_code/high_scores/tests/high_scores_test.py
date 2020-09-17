@@ -1,6 +1,6 @@
 import unittest
 
-from src.high_scores import latest, personal_best, personal_top_three
+from src.high_scores import latest, personal_best, personal_top_three, high_to_low
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v4.0.0
 
