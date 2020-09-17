@@ -12,9 +12,10 @@ class HighScoresTest(unittest.TestCase):
     def test_latest_score(self):
         self.assertEqual(41, latest(self.scores))
         
-    # Tests
+    def test_gets_personal_best(self):
+        self.assertEqual(105, personal_best(self.scores))
 
-    # Test latest score (the last thing in the list)
+    # Tests
 
     # Test personal best (the highest score in the list)
 
